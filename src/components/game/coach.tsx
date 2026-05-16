@@ -43,7 +43,14 @@ export function AICoach() {
       <div className="bg-muted rounded-xl p-4 border">
         <div className="flex items-center gap-3">
           <Brain className="w-5 h-5 text-muted-foreground" />
-          <p className="text-sm text-muted-foreground">Сделайте первый ход для анализа</p>
+          <p className="text-sm text-muted-foreground flex-1">Сделайте первый ход для анализа</p>
+          <button
+            onClick={() => updateSettings({ showProbability: false })}
+            className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+            title="Выключить AI Coach"
+          >
+            ✕
+          </button>
         </div>
       </div>
     );
@@ -95,6 +102,13 @@ export function AICoach() {
               </div>
             )}
           </div>
+          <button
+            onClick={() => updateSettings({ showProbability: false })}
+            className="text-xs text-muted-foreground hover:text-foreground transition-colors shrink-0"
+            title="Выключить AI Coach"
+          >
+            ✕
+          </button>
         </div>
       </motion.div>
     </AnimatePresence>
