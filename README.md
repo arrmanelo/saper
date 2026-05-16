@@ -1,91 +1,123 @@
-# 🎮 Minesweeper Pro
+<div align="center">
 
-Современная веб-платформа для игры в Сапёр с AI Coach, Daily Challenge, социальным слоем и системой Pro-подписок.
+# 💣 Minesweeper Pro
 
-## 🚀 Функционал
+**Современная платформа для игры в Сапёр с AI-подсказками и ежедневными челленджами**
 
-### Уровень «Сильный»
-- ✅ Таймер, история игр, статистика побед/поражений
-- ✅ Лучший результат по каждому уровню сложности
-- ✅ Авторизация и сохранение прогресса (Supabase)
-- ✅ Тёмная/светлая тема
-- ✅ Адаптивный интерфейс для телефона и планшета
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.4-3178C6?logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Supabase](https://img.shields.io/badge/Supabase-Auth_+_DB-3FCF8E?logo=supabase&logoColor=white)](https://supabase.com)
 
-### Уровень «Великий»
-- ✅ **Daily Challenge** — ежедневное одинаковое поле для всех с рейтингом
-- ✅ **AI Coach** — анализ вероятностей, подсказки, объяснение ходов
-- ✅ **Глобальный лидерборд** + рейтинг по городам
-- ✅ **Тренировка вероятностного мышления** — heatmaps, статистика решений
-- ✅ **Pro-подписка** — кастомные скины, авто-флаги, расширенная аналитика
+</div>
 
-## 🛠 Технический стек
+---
 
-| Компонент | Технология |
-|-----------|-----------|
-| Фронтенд | React 18 + TypeScript + Tailwind CSS |
-| Состояние | Zustand |
-| Анимации | Framer Motion |
-| Бэкенд/БД | Supabase (PostgreSQL + Auth + Realtime) |
-| Платежи | Stripe |
-| Роутинг | React Router |
-| Иконки | Lucide React |
+## ✨ Что умеет
 
-## 📦 Установка
+🎯 **Классический сапёр** — 3 уровня сложности + настраиваемое поле  
+🧠 **AI Coach** — математический анализ вероятностей, подсказки с координатами лучшего хода  
+📅 **Daily Challenge** — одно поле для всех, глобальный рейтинг  
+🏆 **Лидерборд** — таблица лучших с фильтрацией по городам  
+🌙 **Тёмная / Светлая тема** — переключение в один клик  
+📱 **Адаптивный дизайн** — работает на телефоне, планшете и десктопе  
+🔐 **Авторизация** — регистрация и вход через Supabase Auth  
+📊 **Статистика** — история игр, лучшие результаты, процент побед  
 
-```bash
-# Клонирование
-git clone <repo>
-cd minesweeper-pro
-
-# Установка зависимостей
-npm install
-
-# Настройка окружения
-cp .env.example .env
-# Заполните переменные Supabase и Stripe
-
-# Запуск
-cd /mnt/agents/output/minesweeper-pro
-npm install
-npm run dev
-```
-
-## 🗄 Supabase настройка
-
-1. Создайте проект в [Supabase](https://supabase.com)
-2. Выполните SQL из `supabase/migrations/001_initial_schema.sql`
-3. Настройте Auth (Email provider)
-4. Скопируйте URL и Anon Key в `.env`
-
-## 💳 Stripe настройка (Pro)
-
-1. Создайте аккаунт в [Stripe](https://stripe.com)
-2. Настройте продукты и цены
-3. Скопируйте Publishable Key в `.env`
-4. Настройте вебхуки для подписок
-
-## 🎮 Управление
-
-| Действие | Управление |
-|----------|-----------|
-| Открыть клетку | ЛКМ / Тап |
-| Поставить флаг | ПКМ / Долгий тап |
-| Chord (открыть соседей) | Двойной клик |
-| AI Coach | Включить в настройках |
-
-## 📱 Адаптивность
-
-- **Desktop**: полноценный интерфейс с боковыми панелями
-- **Tablet**: оптимизированная сетка
-- **Mobile**: крупные клетки, жесты, вибрация
+---
 
 ## 🧠 AI Coach
 
-AI Coach анализирует текущее состояние поля и:
-- Вычисляет вероятность мины для каждой клетки
-- Предлагает безопасные ходы
-- Объясняет логику решений
-- Показывает уверенность в процентах
+AI Coach работает на **чистой математике** — без внешних API и ключей:
+
+- Вычисляет вероятность мины для каждой скрытой клетки
+- Показывает **конкретные координаты** лучшего хода: _«Лучший ход: клетка (5,3) — риск 12%»_
+- Определяет 100% безопасные клетки и 100% мины
+- Объясняет логику на понятном языке для новичков
+- После проигрыша показывает **анализ игры** — сколько % поля вы открыли
+
+---
+
+## 🛠 Стек технологий
+
+| Компонент | Технология |
+|-----------|------------|
+| Фронтенд | React 18 + TypeScript |
+| Стили | Tailwind CSS 3.4 |
+| Состояние | Zustand |
+| Анимации | Framer Motion |
+| База данных | Supabase (PostgreSQL) |
+| Авторизация | Supabase Auth |
+| Роутинг | React Router 6 |
+| Иконки | Lucide React |
+| Сборка | Vite 5 |
+
+---
+
+## 🚀 Установка и запуск
+
+```bash
+# Клонируйте репозиторий
+git clone https://github.com/arrmanelo/saper.git
+
+# Перейдите в папку проекта
+cd saper
+
+# Установите зависимости
+npm install
+
+# Скопируйте файл окружения и заполните ключи Supabase
+cp .env.example .env
+
+# Запустите проект
+npm run dev
+```
+
+Откройте [http://localhost:5173](http://localhost:5173) в браузере.
+
+---
+
+## ⚙️ Настройка Supabase
+
+1. Создайте проект на [supabase.com](https://supabase.com)
+2. Выполните SQL-миграцию из `supabase/migrations/001_initial_schema.sql`
+3. Включите **Email Auth** в настройках аутентификации
+4. Скопируйте `Project URL` и `Anon Key` в файл `.env`:
+
+```env
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key
+```
+
+---
+
+## 🎮 Управление
+
+| Действие | Мышь | Тач |
+|----------|------|-----|
+| Открыть клетку | Левый клик | Тап |
+| Поставить флаг | Правый клик | Долгий тап |
+| Открыть соседей | Двойной клик | Двойной тап |
+
+---
+
+## 📁 Структура проекта
+
+```
+src/
+├── components/
+│   ├── game/          # GameBoard, GameCell, GameHeader, AICoach
+│   ├── leaderboard/   # Leaderboard
+│   ├── profile/       # Profile
+│   └── ui/            # Button, Card, Dialog, Input, Badge, Tabs
+├── hooks/             # useGameStore, useAuth, useTheme, useTimer
+├── pages/             # GamePage, DailyPage, LeaderboardPage, ProfilePage
+├── types/             # TypeScript типы и конфиги сложности
+├── utils/             # Игровая логика, AI Coach, вероятности
+└── lib/               # Supabase клиент
+```
+
+---
 
 ## 📄 Лицензия
 
