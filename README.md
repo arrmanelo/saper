@@ -106,15 +106,19 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 ```
 src/
 ├── components/
-│   ├── game/          # GameBoard, GameCell, GameHeader, AICoach
-│   ├── leaderboard/   # Leaderboard
-│   ├── profile/       # Profile
-│   └── ui/            # Button, Card, Dialog, Input, Badge, Tabs
-├── hooks/             # useGameStore, useAuth, useTheme, useTimer
-├── pages/             # GamePage, DailyPage, LeaderboardPage, ProfilePage
+│   ├── game/          # board, cell, header, coach
+│   ├── leaderboard/   # leaderboard
+│   ├── profile/       # profile
+│   ├── ui/            # button, card, dialog, input, badge, tabs
+│   ├── auth.tsx       # модалка авторизации
+│   ├── daily-challenge.tsx
+│   ├── navbar.tsx
+│   └── settings-panel.tsx
+├── hooks/             # game-store, auth, theme, timer
+├── pages/             # game, daily, leaderboard, profile, settings
 ├── types/             # TypeScript типы и конфиги сложности
-├── utils/             # Игровая логика, AI Coach, вероятности
-└── lib/               # Supabase клиент
+├── utils/             # game-logic (игровая логика, AI Coach, вероятности)
+└── lib/               # supabase клиент
 ```
 
 ---

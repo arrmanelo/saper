@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
-import { GameCell } from './GameCell';
-import { useGameStore } from '@/hooks/useGameStore';
+import { GameCell } from './cell';
+import { useGameStore } from '@/hooks/game-store';
 import type { Difficulty } from '@/types';
 
 const CELL_SIZES: Record<string, number> = {

@@ -14,7 +14,7 @@ import {
   revealAllMines,
   getFlagCount,
   calculateProbabilities,
-} from '@/utils/gameLogic';
+} from '@/utils/game-logic';
 
 interface GameStore {
   game: GameState;

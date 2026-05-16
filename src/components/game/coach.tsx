@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import { Brain, Lightbulb, Target, AlertTriangle, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGameStore } from '@/hooks/useGameStore';
-import { getAICoachSuggestion } from '@/utils/gameLogic';
-import { Button } from '@/components/ui/Button';
+import { useGameStore } from '@/hooks/game-store';
+import { getAICoachSuggestion } from '@/utils/game-logic';
+import { Button } from '@/components/ui/button';
 
 export function AICoach() {
   const { game, settings, updateSettings } = useGameStore();

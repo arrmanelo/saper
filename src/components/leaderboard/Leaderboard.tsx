@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Trophy, MapPin, Calendar, Globe, Users } from 'lucide-react';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/Tabs';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import type { Difficulty, LeaderboardEntry } from '@/types';
-import { formatTime, formatDate } from '@/utils/gameLogic';
+import { formatTime, formatDate } from '@/utils/game-logic';
 
 // Mock data for demo
 const MOCK_LEADERBOARD: Record<string, LeaderboardEntry[]> = {

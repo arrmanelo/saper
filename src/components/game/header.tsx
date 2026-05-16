@@ -1,10 +1,10 @@
 import React from 'react';
 import { Timer, Flag, RotateCcw, Pause, Play, Brain, Trophy, Bomb } from 'lucide-react';
-import { useGameStore } from '@/hooks/useGameStore';
-import { useTimer } from '@/hooks/useTimer';
-import { formatTime } from '@/utils/gameLogic';
-import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
+import { useGameStore } from '@/hooks/game-store';
+import { useTimer } from '@/hooks/timer';
+import { formatTime } from '@/utils/game-logic';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 
 export function GameHeader() {
   const { game, pause, resume, newGame, settings } = useGameStore();

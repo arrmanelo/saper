@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Dialog } from '@/components/ui/Dialog';
-import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/Input';
-import { useAuth } from '@/hooks/useAuth';
+import { Dialog } from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { useAuth } from '@/hooks/auth';
 import { LogIn, UserPlus, Mail, Lock, User } from 'lucide-react';
 
 interface AuthModalProps {

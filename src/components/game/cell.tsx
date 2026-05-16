@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { Flag, Bomb } from 'lucide-react';
 import type { Cell } from '@/types';
-import { useGameStore } from '@/hooks/useGameStore';
+import { useGameStore } from '@/hooks/game-store';
 
 interface GameCellProps {
   cell: Cell;

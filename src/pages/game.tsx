@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { GameHeader } from '@/components/game/GameHeader';
-import { GameBoard } from '@/components/game/GameBoard';
-import { AICoach } from '@/components/game/AICoach';
-import { useGameStore } from '@/hooks/useGameStore';
-import { Button } from '@/components/ui/Button';
-import { Dialog } from '@/components/ui/Dialog';
-import { Card, CardContent } from '@/components/ui/Card';
+import { GameHeader } from '@/components/game/header';
+import { GameBoard } from '@/components/game/board';
+import { AICoach } from '@/components/game/coach';
+import { useGameStore } from '@/hooks/game-store';
+import { Button } from '@/components/ui/button';
+import { Dialog } from '@/components/ui/dialog';
+import { Card, CardContent } from '@/components/ui/card';
 import { DIFFICULTY_CONFIG } from '@/types';
 import type { Difficulty } from '@/types';
 import { Trophy, Settings, Brain, Sparkles, RotateCcw, Play } from 'lucide-react';

@@ -1,12 +1,12 @@
 import React from 'react';
 import { User, Settings, History, BarChart3, MapPin, Crown, LogOut } from 'lucide-react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/Tabs';
-import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
-import { useAuth } from '@/hooks/useAuth';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { useAuth } from '@/hooks/auth';
 import type { GameHistory, UserStats } from '@/types';
-import { formatTime, formatDate } from '@/utils/gameLogic';
+import { formatTime, formatDate } from '@/utils/game-logic';
 
 const MOCK_HISTORY: GameHistory[] = [
   { id: '1', userId: '1', difficulty: 'beginner', result: 'won', time: 15, moves: 18, flags: 10, date: '2026-05-16T10:00:00Z', seed: 'abc' },

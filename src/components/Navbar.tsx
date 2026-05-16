@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Gamepad2, Trophy, User, Settings, Sun, Moon, Menu, X, Crown, Zap } from 'lucide-react';
-import { useGameStore } from '@/hooks/useGameStore';
-import { useAuth } from '@/hooks/useAuth';
-import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
-import { AuthModal } from './AuthModal';
+import { useGameStore } from '@/hooks/game-store';
+import { useAuth } from '@/hooks/auth';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { AuthModal } from './auth';
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);

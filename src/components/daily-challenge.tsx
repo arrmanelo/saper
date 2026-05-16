@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Trophy, Clock, Users, ArrowRight, Zap } from 'lucide-react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
-import { useGameStore } from '@/hooks/useGameStore';
-import { getDailySeed, formatTime } from '@/utils/gameLogic';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { useGameStore } from '@/hooks/game-store';
+import { getDailySeed, formatTime } from '@/utils/game-logic';
 import { DIFFICULTY_CONFIG } from '@/types';
 import type { LeaderboardEntry } from '@/types';
 

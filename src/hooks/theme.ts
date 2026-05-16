@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useGameStore } from './useGameStore';
+import { useGameStore } from './game-store';
 
 export function useTheme() {
   const theme = useGameStore((state) => state.settings.theme);

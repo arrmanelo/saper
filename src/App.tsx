@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Navbar } from '@/components/Navbar';
-import { GamePage } from '@/pages/GamePage';
-import { DailyPage } from '@/pages/DailyPage';
-import { LeaderboardPage } from '@/pages/LeaderboardPage';
-import { ProfilePage } from '@/pages/ProfilePage';
-import { SettingsPage } from '@/pages/SettingsPage';
-import { useTheme } from '@/hooks/useTheme';
+import { Navbar } from '@/components/navbar';
+import { GamePage } from '@/pages/game';
+import { DailyPage } from '@/pages/daily';
+import { LeaderboardPage } from '@/pages/leaderboard';
+import { ProfilePage } from '@/pages/profile';
+import { SettingsPage } from '@/pages/settings';
+import { useTheme } from '@/hooks/theme';
 
 export default function App() {
   useTheme();

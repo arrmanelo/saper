@@ -1,9 +1,9 @@
 import React from 'react';
 import { Settings, Volume2, Vibrate, Eye, Flag, Smartphone, Palette, CreditCard } from 'lucide-react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { useGameStore } from '@/hooks/useGameStore';
-import { useAuth } from '@/hooks/useAuth';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { useGameStore } from '@/hooks/game-store';
+import { useAuth } from '@/hooks/auth';
 
 export function SettingsPanel() {
   const { settings, updateSettings, newGame } = useGameStore();
